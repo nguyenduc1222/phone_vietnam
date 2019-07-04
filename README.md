@@ -7,3 +7,5 @@
 + Python 3
 
 Run: python phone.py
+
+#multiprocessing #python3 #python #write #txt
