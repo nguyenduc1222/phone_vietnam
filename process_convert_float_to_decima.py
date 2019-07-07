@@ -1,7 +1,7 @@
 import sys
 import fileinput
 from decimal import *
-
+# python edit.py fileName.txt
 print ('Number of arguments:', len(sys.argv), 'arguments.')
 print ('Argument List:', str(sys.argv))
 
