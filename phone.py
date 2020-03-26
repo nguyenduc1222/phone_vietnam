@@ -1,11 +1,12 @@
 import multiprocessing
+import time
 
 # Define a function for the thread
 def print_phone(first_phone):
 	with open("phone_" + first_phone + ".txt", "a") as myfile:
-		for j in range(10000000):
+		for j in range(1000000):
 			string = str(j)
-			while len(string) < 7:
+			while len(string) < 6:
 				string = "0" + string
 			myfile.write("84" + first_phone + string + "\n")
 		return
@@ -15,3 +16,4 @@ if __name__ == '__main__':
 	for x in first_phones:
 		p = multiprocessing.Process(target=print_phone, args=(x,))
 		p.start()
+		time.sleep(1)	
